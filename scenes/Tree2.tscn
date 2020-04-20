@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/foliage.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Tree2.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 124, 74, 102, 207 )
+
+[node name="Tree2" type="Sprite"]
+texture = SubResource( 1 )
+offset = Vector2( 0, -105 )
+script = ExtResource( 2 )

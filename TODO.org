@@ -1,0 +1,144 @@
+
+Ludum Dare 46
+
+Theme: Keepin It Alive
+
+* Core Loop
+** Horde Defense
+*** we want to try to survive against increasing numbers of critters that are trying to kill us!
+*** We will get items / or ammo as we wander around, which will allow us to use abilities like bombs or traps against the critters that are after us.
+*** If critters reach us, we take damange or die? (maybe toggle)
+*** will earn 'points' based on how long you survive against the horde
+* TODO [1/3] Core Tech
+** Screens
+*** main game
+*** game over
+*** menu?
+** TODO [4/7] Godot Scenes
+*** DONE [4/4] Entity (ememy/player)
+    CLOSED: [2020-04-19 Sun 14:22]
+**** DONE Sprite
+     CLOSED: [2020-04-19 Sun 09:04]
+**** DONE Collider
+     CLOSED: [2020-04-19 Sun 09:04]
+**** DONE Animation
+     CLOSED: [2020-04-19 Sun 09:04]
+**** DONE Health
+     CLOSED: [2020-04-19 Sun 09:04]
+*** TODO [2/3] Player
+**** DONE Movement
+**** TODO Attack
+***** TODO use inventory items to 'attack'
+**** DONE Handle Defeat
+     CLOSED: [2020-04-19 Sun 17:41]
+*** DONE [2/2] Mosters/AI
+    CLOSED: [2020-04-19 Sun 14:22]
+**** DONE Zombies
+     CLOSED: [2020-04-19 Sun 14:21]
+***** [1/2] Movement/ai
+****** DONE basic follow then eventually Nav2D
+       CLOSED: [2020-04-19 Sun 09:04]
+****** TODO zombie charge?
+ detect when a charge can happen and then up speed and change to run animation
+***** [1/2] Attack
+****** DONE when collides with player, attack and do damage
+****** TODO burst on death?
+**** DONE Robots
+     CLOSED: [2020-04-19 Sun 14:21]
+***** DONE Sprites
+      CLOSED: [2020-04-19 Sun 12:39]
+***** DONE Collider
+      CLOSED: [2020-04-19 Sun 14:21]
+***** DONE follow/target player
+      CLOSED: [2020-04-19 Sun 12:39]
+***** DONE Fire Lasers
+      CLOSED: [2020-04-19 Sun 14:21]
+***** DONE Take Damage
+      CLOSED: [2020-04-19 Sun 14:21]
+***** DONE Have game spawn
+      CLOSED: [2020-04-19 Sun 12:39]
+*** DONE [1/1] Projectile
+    CLOSED: [2020-04-19 Sun 14:23]
+**** DONE [4/4] Laser
+     CLOSED: [2020-04-19 Sun 14:23]
+***** DONE Sprite
+      CLOSED: [2020-04-19 Sun 14:23]
+***** DONE Heading
+      CLOSED: [2020-04-19 Sun 14:23]
+***** DONE Collider
+      CLOSED: [2020-04-19 Sun 14:23]
+***** DONE Damage
+      CLOSED: [2020-04-19 Sun 14:23]
+*** DONE [3/3] Items
+    CLOSED: [2020-04-19 Sun 16:41]
+**** DONE Sprite
+     CLOSED: [2020-04-19 Sun 09:04]
+**** DONE Collider
+     CLOSED: [2020-04-19 Sun 09:03]
+**** DONE [3/3] Mechanic
+     CLOSED: [2020-04-19 Sun 16:41]
+***** DONE Traps
+      CLOSED: [2020-04-19 Sun 16:41]
+***** DONE Bombs
+      CLOSED: [2020-04-19 Sun 09:03]
+***** DONE Elixer - Confusion
+      CLOSED: [2020-04-19 Sun 11:16]
+****** DONE Sprite
+       CLOSED: [2020-04-19 Sun 11:16]
+****** DONE Animation
+       CLOSED: [2020-04-19 Sun 11:16]
+****** DONE Collider
+       CLOSED: [2020-04-19 Sun 11:16]
+******* check for zombies and force change target
+****** DONE Timer
+       CLOSED: [2020-04-19 Sun 11:16]
+******* on timeout kill and create object splat
+****** DONE Player creates and fires
+       CLOSED: [2020-04-19 Sun 11:16]
+******* heading and velocity
+*** TODO [3/4] Objects
+***** DONE Trees
+      CLOSED: [2020-04-19 Sun 15:39]
+***** DONE Rocks
+      CLOSED: [2020-04-19 Sun 15:39]
+***** DONE Shrubs
+      CLOSED: [2020-04-19 Sun 15:39]
+***** TODO Splats??
+*** TODO [2/2] FX
+**** DONE Asplosions!
+     CLOSED: [2020-04-19 Sun 09:04]
+**** DONE Confusion for Zombies
+     CLOSED: [2020-04-19 Sun 16:07]
+** TODO [0/2] Sound!
+*** TODO Audio FX
+**** TODO [2/4] zombies
+***** DONE arrival
+      CLOSED: [2020-04-19 Sun 18:32]
+***** DONE attack
+      CLOSED: [2020-04-19 Sun 18:32]
+***** TODO die
+***** TODO ambient?
+**** TODO [1/2] Player
+***** DONE player hit
+      CLOSED: [2020-04-19 Sun 19:35]
+***** TODO death
+**** TODO [3/3] Items
+***** DONE bomb explode
+      CLOSED: [2020-04-19 Sun 19:35]
+***** DONE trap
+      CLOSED: [2020-04-19 Sun 18:32]
+***** DONE elixer
+      CLOSED: [2020-04-19 Sun 19:35]
+**** TODO [2/4] Robots
+***** DONE arrival
+      CLOSED: [2020-04-19 Sun 18:32]
+***** TODO on hit
+***** DONE on shoot
+      CLOSED: [2020-04-19 Sun 18:32]
+***** TODO on death
+*** TODO Music?
+** DONE [1/1] Extras
+   CLOSED: [2020-04-19 Sun 17:39]
+*** DONE Sprite z-indexing
+    CLOSED: [2020-04-19 Sun 17:39]
+    
